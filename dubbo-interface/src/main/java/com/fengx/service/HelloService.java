@@ -3,9 +3,9 @@ package com.fengx.service;
 /**
  * @author: Fengx
  * @date: 2021-07-21
- * @description:
+ * @description: 服务接口
  **/
 public interface HelloService {
 
-    public  String sayHello(String name);
+    String sayHello(String name);
 }

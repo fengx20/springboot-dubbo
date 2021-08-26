@@ -8,17 +8,18 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @author: Fengx
  * @date: 2021-07-21
- * @description:
+ * @description: 调用远程服务
  **/
 @RestController
 public class HelloController {
+
     @Reference
     private HelloService helloService;
 
     @RequestMapping("/hello")
     public String hello() {
         String hello = helloService.sayHello("world");
-        System.out.println(helloService.sayHello("SnailClimb"));
+        System.out.println(helloService.sayHello("fengx"));
         return hello;
     }
 }
